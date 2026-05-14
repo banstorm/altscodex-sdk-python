@@ -1,0 +1,18 @@
+# Python 빌드/캐시/가상환경 산출물 + 에이전트 도구 내부 상태 제외 (PyPI/GitHub 배포 노이즈 차단)
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+*.log
+
+# OMC / Claude / IDE 내부 상태 (절대 커밋 금지)
+.omc/
+.claude/
+.idea/
+.vscode/
+.DS_Store
